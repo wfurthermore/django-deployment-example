@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+    {% block body_block%}
+
+    <h1>Hello and welcome to the site!</h1>
+    <h1>This is the index.html page with filters:</h1>
+    <h2>Cut 'hello' from string='hello world':{{ text|cut:'hello' }}</h2>
+    <h2>Add 99 to number=100 so total=:{{ number|add:'99' }}</h2>
+    {% endblock %}
